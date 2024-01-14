@@ -58,6 +58,10 @@ Run the tool using the following command:
 node apistorm.js -u <url> -n <total-requests> -c <concurrent-requests>
 ```
 
+## Demo
+
+Check out the [live demo](https://www.awesomescreenshot.com/video/24025264?key=7dc882695ecabd4992283d9fd13bb64b) to see apiStorm in action
+
 ### Command-Line Options
 
 - `-u`: The URL to test (required).
