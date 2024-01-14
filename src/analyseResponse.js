@@ -8,8 +8,8 @@ export const analyseResponse = (responses) => {
     (response) =>
       response["Status Code"] >= 400 && response["Status Code"] < 500
   );
-  analysis["Successful Response"] = successfulResponses.length;
-  analysis["Failed Response"] = failedResponses.length;
+  analysis["Successful Response [2xx]"] = successfulResponses.length;
+  analysis["Failed Response [4xx]"] = failedResponses.length;
 
   const responseTimes = responses.map((response) => response["response time"]);
   const averageRequestTime =

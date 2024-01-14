@@ -111,6 +111,9 @@ console.log();
 
 const analysis = analyseResponse(allResponses);
 maxKeyLength = Math.max(...Object.keys(analysis).map((key) => key.length));
+
+const totalTime = (performance.now() - prev) * 0.001;
+console.log(`Total time for Test: ${" ".repeat(10)}  ${totalTime}`);
 for (const key in analysis) {
   const padding = " ".repeat(maxKeyLength - key.length);
   console.log(`${key}:${padding}    ${analysis[key]}`);
